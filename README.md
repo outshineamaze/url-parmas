@@ -15,10 +15,12 @@ methods:
 // parse
 const urlString = 'key1=value1&key2=value2'
 const result = parse(urlString)
+// result =  {'key1': 'value1', 'key2': 'value2'}
 
 // stringify
 const urlObj = {'key1': 'value1', 'key2': 'value2'}
 const result = stringify(urlObj)
+// result =  'key1=value1&key2=value2'
 
 // set
 const urlString = 'key1=value1&key2=value2'
@@ -35,3 +37,6 @@ const key = 'key2'
 const urlString = 'key1=value1&key2=value2'
 const result = remove(urlString, key)
 ```
+
+
+
