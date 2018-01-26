@@ -31,6 +31,7 @@ const result1 = set(urlString, key, value)
 // get
 const urlString = 'key1=value1&key2=value2'
 const result = get(urlString, 'key1')
+// result = 'value'
 
 //remove
 const key = 'key2'
