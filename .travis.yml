@@ -7,3 +7,10 @@ node_js:
   - "6"
 script:
   - "npm run test"
+jobs:
+deploy:
+  provider: npm
+  email: outshineamaze@gmail.com
+  api_key: $NPM_TOKEN
+  on:
+    tags: true
