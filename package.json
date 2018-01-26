@@ -1,5 +1,5 @@
 {
-  "name": "url-params",
+  "name": "url-params-method",
   "version": "1.0.0",
   "description": "a simple url params tools",
   "main": "src/index.js",
@@ -7,6 +7,7 @@
     "test": "./node_modules/.bin/mocha test/test.js",
     "lint": "./node_modules/.bin/standard ./src/*.js ./test/*.js",
     "lint:fix": "standard --fix ./src/*.js ./test/*.js",
+    "build_dist": "browserify ./src/index.js  > dist/index.js",
     "precommit": "npm run lint & npm run test"
   },
   "repository": {
@@ -17,9 +18,10 @@
     "url",
     "parse"
   ],
-  "author": "outshineamaze@live.com",
+  "author": "outshineamaze@gmail.com",
   "license": "MIT",
   "devDependencies": {
+    "browserify": "^15.2.0",
     "chai": "^4.1.2",
     "mocha": "^5.0.0",
     "snazzy": "^7.0.0",
