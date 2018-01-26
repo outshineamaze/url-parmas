@@ -12,6 +12,7 @@ jobs:
       script: echo "Deploying to npm ..."
       deploy:
         provider: npm
+        email: outshineamaze@gmail.com
         api_key: $NPM_TOKEN
         on:
           tags: true
